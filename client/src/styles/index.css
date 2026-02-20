@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --landing-bg-1: #f5f1ea;
+  --landing-bg-2: #efe8dc;
+  --landing-bg-3: #e7dccb;
+  --landing-surface: #fffaf2;
+  --landing-surface-border: #e6dac7;
+  --landing-text: #2f2a24;
+  --landing-muted: #6b6258;
+  --landing-accent: #8d6b4f;
+  --landing-accent-hover: #7a5b42;
+}
+
+body {
+  @apply bg-neutral-950 text-neutral-100 antialiased;
+  font-family: 'Space Grotesk', 'Manrope', 'Avenir Next', sans-serif;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(120, 95, 70, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 95, 70, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.premium-gradient {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.6), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(236, 220, 194, 0.7), transparent 35%),
+    radial-gradient(circle at 80% 80%, rgba(210, 188, 157, 0.5), transparent 35%),
+    linear-gradient(135deg, var(--landing-bg-1), var(--landing-bg-2) 60%, var(--landing-bg-3));
+}
+
+.slider-handle {
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.25);
+}
+
+.landing-shell {
+  color: var(--landing-text);
+}
+
+.landing-surface {
+  background: var(--landing-surface);
+  border-color: var(--landing-surface-border);
+  box-shadow: 0 18px 45px rgba(91, 74, 53, 0.12);
+}
+
+.landing-muted {
+  color: var(--landing-muted);
+}
+
+.landing-accent {
+  color: var(--landing-accent);
+}
+
+.landing-shell .app-card {
+  background: var(--landing-surface);
+  border-color: var(--landing-surface-border);
+  box-shadow: 0 18px 45px rgba(91, 74, 53, 0.12);
+  backdrop-filter: none;
+}
+
+.landing-shell .app-btn.btn-primary {
+  background: var(--landing-accent);
+  color: #fff9f2;
+}
+
+.landing-shell .app-btn.btn-primary:hover {
+  background: var(--landing-accent-hover);
+}
+
+.landing-shell .app-btn.btn-secondary {
+  border-color: #cdbba2;
+  background: #fffdf8;
+  color: var(--landing-text);
+}
+
+.landing-shell .app-btn.btn-secondary:hover {
+  background: #f6efe4;
+}
+
+.landing-shell .app-btn.btn-ghost {
+  color: var(--landing-text);
+}
+
+.workspace-shell {
+  color: var(--landing-text);
+}
+
+.workspace-shell .app-card {
+  background: var(--landing-surface);
+  border-color: var(--landing-surface-border);
+  box-shadow: 0 12px 30px rgba(91, 74, 53, 0.11);
+  backdrop-filter: none;
+}
+
+.workspace-shell .app-btn.btn-primary {
+  background: var(--landing-accent);
+  color: #fff9f2;
+}
+
+.workspace-shell .app-btn.btn-primary:hover {
+  background: var(--landing-accent-hover);
+}
+
+.workspace-shell .app-btn.btn-secondary {
+  border-color: #cdbba2;
+  background: #fffdf8;
+  color: var(--landing-text);
+}
+
+.workspace-shell .app-btn.btn-secondary:hover {
+  background: #f6efe4;
+}
+
+.workspace-shell .app-btn.btn-ghost {
+  color: var(--landing-text);
+}
+

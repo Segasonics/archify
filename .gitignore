@@ -1,0 +1,14 @@
+node_modules
+.env
+.env.*
+!.env.example
+.DS_Store
+coverage
+dist
+build
+client/dist
+server/.nyc_output
+*.log
+write_test.tmp
+tmpdir
+
